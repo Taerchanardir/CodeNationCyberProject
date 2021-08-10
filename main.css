@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');*/
+
+a:link {
+    color: #C0C0E0;
+    text-decoration: underline;
+}
+a:visited {
+    color: #e0c0e0;
+    text-decoration: underline;
+}
+
+a:hover {
+    color:white;
+    background: #404060;
+    text-decoration: underline;
+}
+
+/* what is 'active?'
+a:active {
+    color: red;
+}
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* there is a white border around the whole page who's cause I can't find */
+/* it makes the page have a vertical scroll bar even when the browser window is large enough for all the content*/
+.whole_page_container {
+    display: flex;
+    min-height: 100vh;
+    /*height: 95vh; ugly failed hack to kill the mystery white border*/
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: #202040;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.header_outer {
+    display: flex;
+    flex-direction: column; /* want items to be vertical*/
+    text-align: center;
+    width: 100%;
+    padding:4px;
+    justify-content: flex-start;
+}
+
+.header_title {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    padding: 8px;
+}
+
+.header_subheading {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding: 4px;
+}
+
+.navbar_outer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar_item_group {
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+}
+
+.navbar_item {
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* ------------------------------------------------ */
+.middle_outer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding:10px;
+    justify-content: flex-start;
+    flex: auto; /* recommended by https://hacks.mozilla.org/2013/12/application-layout-with-css3-flexible-box-module/ */
+}
+
+.middle_item_pair {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.middle_item_img {
+    display: flex;
+    padding: 10px;
+}
+
+.middle_item_txt {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    min-width: 30%;
+}
+
+
+
